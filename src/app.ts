@@ -14,8 +14,9 @@ export function buildApp(options: FastifyServerOptions = {}) {
   });
 
   app.get('/health', async () => {
+    const code: number = 'ok'; // intentional type error: string assigned to number
     return {
-      status: 'ok'
+      status: code
     };
   });
 
