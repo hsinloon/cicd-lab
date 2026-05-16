@@ -5,6 +5,10 @@ on:
     branches:
       - '**'
 
+permissions:
+  checks: write
+  contents: read
+
 jobs:
   ci:
     name: CI Checks
